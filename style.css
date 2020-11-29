@@ -11,9 +11,20 @@
 }
 */
 @import"https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap";
-body{font-family:"Raleway","Sans serif";margin:0}
 
+body
+{
+    font-family:"Raleway","Sans serif";
+    margin:10px;
+    max-width: 1600px;
+    justify-content: center;
+}
 
+*
+{
+	margin: 0;
+	padding: 0;
+}
 
 /*General*/
     img
@@ -66,21 +77,20 @@ h1
 }
 
 
-.top_line p a:hover
+.top_line p a
 {
-    color: #F2F2F2;
-    background-color: #0065FC;
-    padding: 0.8em;
+    color: #0065FC;
+        padding: 0.8em;
     cursor: pointer;
 }
+
 
 .top_line
 {
     display: flex;
     justify-content: space-between;
-    padding:0px;
-    
-    
+    padding: 0px;
+        
 }
 
 
@@ -95,10 +105,11 @@ h1
   
     padding-top: 2em;
     padding-bottom: 1.3em;
-    padding-left: 2em;
+    padding-left: 4em;
     width: 50%;
     border-bottom: 3px solid #F2F2F2;
     margin: 0px;
+    
 }
 
 
@@ -125,35 +136,64 @@ justify-content: space-between;
     margin: 1.2em;
    min-height: 50px;
    min-width: 340px;
+
   
 }
 
-.search_place :first-child
+.form
 {
-   padding: 1em;
+    border: 1px #F2F2F2 solid;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color:black;
+    
+}
+.marqueur
+{   padding: 15px;
+    padding-right: 20px;
+    padding-top: 16px;
+
+   height: 100%;
+   font-size: 0.9em;
     background-color: #F2F2F2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
 }
-
-.search_place :last-child
+.search_place .ville
 {
-    background-color: #0065FC;
-    color: #ffffff;
-    border-radius: 10px;
+    background-color: #FFFFFF;
+        padding: 0px;
+    padding-left: 0.3em;
+    border: 0px;
+    margin: 0px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: black;
+}
+
+.ville::placeholder
+{
+    color:black;
 }
 
 
-.button
+    .btn .fas
 {
 
     background-color: #0065FC;
     color: #FFFFFF;
-    border-right:#0065FC ;
-    border-radius: 0 10px 10px 0;
-    padding: 0.5em;
-       
+    border-radius: 17px;
+    border: #0065fc 0px;
+    padding: 1em;
+    font-size: 1.3em;
+    
     }
-
+    
+.search_place :hover
+{
+    cursor: pointer;
+    font-size: bolder;
+    color: #0065fc;;
+}
 /*filtre selection options */
     
 
@@ -183,6 +223,7 @@ justify-content: space-between;
     text-align: center;
     padding: 0px;
 }
+
 
 /*Filtre */
 
@@ -282,17 +323,17 @@ border:none
 {
     border: #FFFFFF 4px solid;
     border-radius: 15px;
-    box-shadow: #F2F2F2 0px 5px 8px ;
+    box-shadow: #c9c6c6 3px 5px 8px ;
     padding: 0px;
-    margin: 1em;
-    margin-bottom: 00.6em;
+    margin: 0em;
+    margin-bottom: 3em;
     margin-top: 0.2em;
     max-height: 200px;
     max-width: 500px;
-    
+    height: 100%;
+    width: 100%;
+   
 }
-
-
 
 
 .hotel 
@@ -331,8 +372,10 @@ figure h4
 }
 .hosting h3
 {
-    margin-left: 1em;
-    font-weight: 700;
+    
+    font-weight: 750;
+    margin:2em;
+    margin-top: 0em;
 }
 
 .hosting figcaption p
@@ -351,7 +394,7 @@ figure h4
 
 a figure :hover
 {
-color: #0065FC;
+
 font-weight: bold;
 transition-duration: 1s;
 
@@ -437,20 +480,20 @@ border-radius: 15px;
 
 /*section 2 activite*/
 
-
+/*
 .section2
 {
     margin: 1em;
     margin-top: 3em;
 }
 
-.activite h2
+.section2 .activite h2
 {
     font-size: 1em;
     padding: 1em;
     margin-top: 0px;
 }
-.activite figure
+.section2 .activite figure
 
 { 
     width: 100%;
@@ -460,17 +503,17 @@ border-radius: 15px;
     box-shadow: 0px 5px 4px #F2F2F2;  
      
 }
-.activite p
+.section2 .activite p
 {
     margin: 0px;
 }
 
-.activite figcaption
+.section2 .activite figcaption
 {
     height: 15%;
 }
 
-.activite img
+.section2 .activite img
 {
    
     width: 100%;
@@ -478,7 +521,7 @@ border-radius: 15px;
 }
 
 
-.activite
+.section2 .activite
 {
     display: grid;
   grid-template-columns: 300px 300px 300px 300px;
@@ -504,7 +547,7 @@ border-radius: 15px;
   .three
   {
     
-    max-height: 170px;
+    
     grid-column: 2;
     grid-row: 2;
   }
@@ -514,7 +557,7 @@ border-radius: 15px;
     
     
     grid-column: 3;
-    grid-row: 1 / span 2;
+    grid-row: 1 /  2;
   }
   
   .five
@@ -531,7 +574,142 @@ border-radius: 15px;
     grid-column: 4;
     grid-row: 2;
   }
+*/
+/*section3 Activité*/
 
+
+
+
+
+
+
+
+.section3 
+{
+    margin: 1em;
+    padding-bottom: 2em;
+   
+
+}
+
+.section3 h1
+{
+    padding: 1em 0 ;
+}
+.section3 .activite
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+.section3 .activite h2
+{
+    font-size: 1em;
+    margin: 0px;
+    max-height: 55px;
+    padding:01em  1em;
+} 
+
+.zone1
+{
+    display: flex;
+    align-content: stretch; 
+    justify-content: space-between;
+    width: 48%;
+}
+.zone2 
+{
+    display: flex;
+    align-content: stretch; 
+    justify-content: space-between;
+    width: 48%;
+}
+
+
+.short_img
+{
+    justify-content: space-between;
+    width: 45%;
+    height: 100%;
+        display: flex;
+    flex-direction: column;
+    margin: 10px; 
+    
+}
+.short_img a
+{ margin: 1%;}
+
+
+
+.short_img  figure
+{
+    height: 45%;
+  width: 100%;
+    margin: 25px;
+   
+    
+}
+
+
+.section3 .activite img 
+{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0px 0px;
+}
+.section3 .activite figcaption
+{
+    height: 15%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ .big
+{
+height: 450px;
+width: 300px;
+border-radius: 15px;
+box-shadow: 0px 5px 4px #F2F2F2;  
+}
+
+.small
+{
+    width: 300px;
+border-radius: 15px;
+box-shadow: 0px 5px 4px #F2F2F2;  
+}
+.big img
+{
+    width: 300px;
+    height: 390px;
+}
+.activite p
+{width: 300px;
+    height: 55px;
+
+}
+
+
+.activite .short_img
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 300px;
+    max-height: 450px;
+    margin: 0px;
+}
+
+.activite .short_img img
+{
+    max-height: 155px;
+    min-height: 130px;
+    width: 300px;
+}
 
 
 /*footer*/
@@ -597,15 +775,34 @@ footer li a:hover
 .top_line li a:hover
 {
     color: #0065FC;
-    border-bottom: 3px solid #0065FC;
-    padding-bottom: 1.3em;
-    cursor: pointer;
-    border-bottom-width: 50%;
+       cursor: pointer;
+    
   
 }
-.search_place .button_destop
+
+.top_line li:hover
+{
+    border-bottom: 3px solid #0065fc;
+    
+}
+
+
+.search_place .btn_destop
 {
     display: none;
+}
+.marqueur
+  {   
+    padding: 20px;
+    padding-right: 20px;
+    padding-top: 18px;
+    
+            }
+
+.btn
+{
+    background-color: #FFFFFF;
+    border:0px #FFFFFF; 
 }
 
 .search_option h3
@@ -615,7 +812,7 @@ footer li a:hover
 
 
 
-.activite figcaption
+.section2 .activite figcaption
 {
     height: 15%;
 }
@@ -624,12 +821,52 @@ footer li a:hover
 {
     border-radius: 0px;
 }
-.activite img
+.section2 .activite img
 {
     height: auto;
     width: 100%;
     max-height: 130px;
     border-radius: 15px 15px 0px 0px;
+}
+.section3 .activite
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.zone1, .zone2
+{ display: flex;
+    flex-direction: column;
+align-content: space-between;
+}
+.high
+{
+    width: 100%;
+    
+}
+.section3 .activite img
+{
+    height: auto;
+    width: 100%;
+    max-height: 130px;
+    border-radius: 15px 15px 0px 0px;
+}
+.section3 .activite
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 .big
+{
+    height: 190px;
+    margin-bottom: 1em;
+}
+
+.section3 .small
+{
+    height: 190px;
+    margin-bottom: 1em;
 }
 
 footer
@@ -637,12 +874,19 @@ footer
     display: flex;
     flex-direction: column;
 }
-
+footer ul 
+{
+    margin-bottom: 30px;
+}
+footer h2
+{
+    margin-bottom: 10px;
+}
 }
 
 
 /* règles CSS pour  tablette  */
-@media all and (min-width:991px) and (max-width: 1199px)
+@media all and (min-width:991px) and (max-width: 1205px)
 
 {
  
@@ -658,22 +902,62 @@ margin-left: 3em;
 padding-top: 2em;
 
 }
-.destop li :hover
-{
-    color: #0065FC;
-    border-top: #0065FC solid 3px;
-    cursor: pointer;
-    padding-top: 1.3em;
-    border-bottom-width: 200px ;
-}
+.destop li:hover
+   {
+       color: #0065FC;
+       border-top: #0065FC solid 3px;
+       cursor: pointer;
+       
+        
+   }
 
+   .destop li 
+   {
+       align-items: center;
+       margin: 0px;
+       padding: 2em;
+       border: 3px solid #FFFFFF;
+   }
    
   
-.search_place .button .fas
+.search_place .btn .fas
 {
     display: none;
 }
-
+.search_place .btn_destop
+   {
+            padding: 15px;
+         
+        background-color: #0065FC;
+        color: #FFFFFF;
+        border-radius: 0px 15px  15px 0px;
+        border: #0065fc 50px;
+        height: 100%;
+    }    
+        .btn
+        {
+        
+            background-color: #0065FC;
+            color: #FFFFFF;
+            border-radius: 0px 15px  15px 0px;
+            border: #0065fc 50px;
+            height: 100%;
+            
+            
+            
+               
+            }
+ .marqueur
+  {   
+    padding: 16px;
+    padding-right: 20px;
+    padding-top: 13px;
+    height: 100%;
+    font-size: 0.9em;
+   background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+            }
+   
 .section1
 {
     display: flex;
@@ -685,6 +969,7 @@ padding-top: 2em;
 {
     background-color: #F2F2F2;
     width: 70%;
+    border-radius: 15px;
 }
 
 .hotel figure 
@@ -723,26 +1008,68 @@ padding-top: 2em;
 
 
 /*activite tablette*/
-.activite
+.section3 .activite
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-content: space-between;
+   width: 100%;
+    
+}
+.zone1 
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-content: space-between;
+    
+}
+.zone2
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+   align-content: space-between;
+    
 }
-
-.activite figure 
+.activite .short_img
 {
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 2em;
-    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-content: space-between;
+    
+}
+.big
+{
+    
 }
 
-.activite img 
+.section3 .activite img 
 {
     max-width: 300px;
     max-height: 200px;
 }
+
+.section3 .big
+{
+    height: 190px;
+    margin-bottom: 2em;
+    margin: 0px;
+    margin-right: 1em;
+    padding-bottom: 2em;
+}
+ 
+
+.section3 .small
+{
+    height: 190px;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    margin-right: 1em;
+}
+
 
     /*footer tablette*/
 
@@ -751,6 +1078,10 @@ footer .liste
 
     width: 28%;
   
+}
+footer ul 
+{
+    margin-bottom: 30px;
 }
 }
  
@@ -768,20 +1099,68 @@ footer .liste
    {
    border: 0px;
    margin-left: 3em;
-   padding-top: 2em;
+  
    
    }
-   .destop li :hover
+   .destop li:hover
    {
        color: #0065FC;
        border-top: #0065FC solid 3px;
        cursor: pointer;
+       color: #0065FC;
+      
+   }
+
+   .destop li 
+   {
+       align-items: center;
+       margin: 0px;
+       padding: 2em;
+       border: 3px #FFFFFF solid;
    }
    
-   .search_place .button .fas
+   .search_place .btn .fas
    {
        display: none;
    }
+
+
+   .search_place .btn_destop
+   {
+            padding: 15px;
+         
+        background-color: #0065FC;
+        color: #FFFFFF;
+        border-radius: 0px 15px  15px 0px;
+        border: #0065fc 50px;
+        height: 100%;
+    }    
+        .btn
+        {
+        
+            background-color: #0065FC;
+            color: #FFFFFF;
+            border-radius: 0px 15px  15px 0px;
+            border: #0065fc 50px;
+            height: 100%;
+            
+            
+            
+               
+            }
+ .marqueur
+  {   
+    padding: 16px;
+    padding-right: 20px;
+    padding-top: 13px;
+    height: 100%;
+    font-size: 0.9em;
+   background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+            }
+   
+ 
+
 /*section 1 Destop*/
 
    .section1
@@ -852,58 +1231,6 @@ footer .liste
 /*Activité Destop*/
 
 
-   .activite
-   {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-        align-content: stretch;
-        
-   }
-.high
-{
-    background-color: aqua;
-    min-height: 450px;
-    height: 100%;
-    
-}
-
-.high img
-{
-    min-height: 380px;
-}
-.activite figure
-
-{
-    
-    width: 100%;
-    max-width: 300px;
-    margin: 0px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 4px #c2c0c0;  
-     
-}
-.activite figure .high
-{
-    height: 100%;
-}
-
-.activite figure .small
-{
-    max-height: 200px;
-}
-.short_img
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.activite figcaption
-{
-    
-    width: 100%;
-    max-height: 55px;
-}
 
    footer .liste
 {

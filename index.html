@@ -23,8 +23,8 @@
     </div>
 <nav>
     <ul class="top_line">
-       <li><a href="#hosting"> Hébergements</a></li> <!--Ancre a rajouter-->
-    <li><a href="#"> Activités</a></li>
+       <li><a href="#Hebergement"> Hébergements</a></li> <!--Ancre -->
+    <li><a href="#Activites"> Activités</a></li>
     </ul>
 
     
@@ -41,8 +41,8 @@
     </div>
 <nav>
     <ul class="top_line">
-       <li><a href="#"> Hébergements</a></li> <!--Ancre a rajouter-->
-    <li><a href="#"> Activités</a></li>
+       <li><a href="#Hebergement"> Hébergements</a></li> <!--Ancre -->
+    <li><a href="#Activites"> Activités</a></li>
     <li><a href="#" class="subscrib">S'inscrire</a></li> 
     </ul>
 
@@ -65,13 +65,13 @@
         <p>
             <div class="search_place">
                 
-                <i class="fas fa-map-marker-alt"></i>
+               
                    
                      <form method="post" action="traitement.php" class="form">
-        
-                     <input type="text" name="ville" class="ville" placeholder="Marseille, France" size="20"/>
-                     <button type="button" class="button">
-                         <span class="button_destop">Rechercher</span> <!--bouton pour destop -->
+               <span class="marqueur"> <i class="fas fa-map-marker-alt"></i></span>
+                     <input type="text" name="ville" class="ville" placeholder="Marseille, France" size="17"/>
+                     <button type="button" class="btn">
+                         <span class="btn_destop">Rechercher</span> <!--bouton pour destop -->
                          <i class="fas fa-search"></i> <!--bouton pour mobile-->
                     </button>
                 </form>
@@ -200,7 +200,7 @@
 </article>
 
 <!-- acticle 2 Hebergement -->
-<article class="hosting">
+<article class="hosting" id="Hebergement">
     <h1>Hébergements à Marseille</h1>
     
         <ul class=hotel>
@@ -260,7 +260,8 @@
                 </figure>
                 </a>
             </li>
-        
+        </ul>
+        <ul class="hotel">
             <li>
                 <a href="#">
                 <figure>
@@ -330,12 +331,12 @@
 
 </section>
 
-
-<section class="section2">
+<!-- test activit
+<section class="section2" id="Activites">
 	<h1>Activités à Marseille</h1>
 	
 		
-		<div class="activite">
+		<div class="activite" >
 			
 			
 				<a href="#">
@@ -400,31 +401,107 @@
 			</div>
 		</div>
 
+</section>  -->
+
+<!-- test activite -->
+
+<section class="section3">
+	<h1>Activités à Marseille</h1>
+	
+		
+		<div class="activite">
+			
+			<div class="zone1">
+                <a href="#"><div class="big">
+				
+                   	<img src="reservia_files/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" title="Vieux port" alt="Vieux port"  />
+			 		<h2>Vieux Port</h2>
+					
+                                 
+				
+		        </div> </a>
+            <div class="short_img">
+		
+                <a href="#"><div class="small">
+                     
+                     <img src="reservia_files/paul-hermann-QFTrLdQIRhI-unsplash.jpg" title="Fort de Pomègues" alt="Fort de Pomègues" />
+				    <h2>Fort de Pomègues</h2>		
+				    
+		        </div></a>	
+		
+                <a href="#">
+                    <div class="small">
+				    
+					<img src="reservia_files/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" title="Iles du Frioul" alt="Iles du Frioul" />
+			        <h2>Iles du Frioul</h2>
+                    	
+                </div></a>
+            </div>
+            </div>
+
+    <div class="zone2">
+    
+                
+                    <a href="#">
+                 <div class="big">   
+                        <img src="reservia_files/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" title="Parc National des Calanques" alt="Parc National des Calanques" class="high"/>
+                    <h2>Parc National des Calanques</h2>
+                    
+                </div></a>
+
+            <div class="short_img"> 
+            
+                
+				<a href="#">
+				<div class="small">
+					<img src="reservia_files/florian-wehde-xW9e8gdotxI-unsplash.jpg" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde" />
+				    <h2>Notre-Dame-de-la-Garde</h2>
+								
+			    </div></a>
+	
+	
+                <a href="#">
+                <div class="small">
+				    
+						
+					<img src="reservia_files/lena-paulin-wH2-EJoDcV0-unsplash.jpg" title="Parc Longchamp" alt="Parc Longchamp" />
+				    <h2>Parc Longchamp</h2>
+				
+                </div></a>
+
+            </div>
+  </div>
+		</div>
+
 </section>
+
 
 <!-- Footer -->
 <footer>
-	<section class= "liste">
+	<div class= "liste">
 	<h2> A propos</h2>
-    <ul>    <li><a href="#">Fonctionnement du site</a></li>
+    <ul>    
+        <li><a href="#">Fonctionnement du site</a></li>
         <li><a href="#">Condition générales de vente</a></li>
 		<li><a href="#">Données et confidentialités</a></li>
 	</ul>
-	</section>
+    </div>
 
-	<section class=liste>
+	<div class=liste>
 	 <h2>Nos hébergements </h2>
-	<ul>	<li> <a href="#"> Charte qualité</a></li>
+	<ul>	
+        <li> <a href="#"> Charte qualité</a></li>
 		<li><a href="#">Soumettre votre hôtel</a></li>
 	</ul>
-	</section>
+    </div>
 
-	<section class=liste>
+	<div class=liste>
 	 <h2>Assistance </h2>
-	<ul>	<li><a href="#">Centre d'aide</a></li>
+	<ul>	
+        <li><a href="#">Centre d'aide</a></li>
 		<li><a href="#">Nous contacter</a></li>
 	</ul>
-	</section>
+    </div>
 
 </footer>
 </body>
