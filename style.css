@@ -15,8 +15,8 @@
 body
 {
     font-family:"Raleway","Sans serif";
-    margin:10px;
-    max-width: 1600px;
+    
+   
     justify-content: center;
 }
 
@@ -45,6 +45,14 @@ figure:hover
     transform: scale(1.015); 
     transition: all 0.3s;
 }
+
+.activite a:hover
+{
+    transform: scale(1.015); 
+    transition: all 0.3s;
+}
+
+
 /*Header*/
 
 h1
@@ -105,10 +113,11 @@ h1
   
     padding-top: 2em;
     padding-bottom: 1.3em;
-    padding-left: 4em;
-    width: 50%;
+       width: 50%;
     border-bottom: 3px solid #F2F2F2;
     margin: 0px;
+   display: flex;
+   justify-content: center;
     
 }
 
@@ -147,6 +156,7 @@ justify-content: space-between;
     font-size: 1.2em;
     color:black;
     
+    
 }
 .marqueur
 {   padding: 15px;
@@ -170,7 +180,7 @@ justify-content: space-between;
     color: black;
 }
 
-.ville::placeholder
+.ville ::placeholder
 {
     color:black;
 }
@@ -301,7 +311,11 @@ border:none
 }
 
 /*section1 hebergement */
-
+.section1 
+{
+    max-width: 1600px;
+    margin-right: 0px;
+}
 .section1 h1
 {
     margin: 1em;
@@ -329,10 +343,10 @@ border:none
     margin-bottom: 3em;
     margin-top: 0.2em;
     max-height: 200px;
-    max-width: 500px;
+    max-width: 400px;
     height: 100%;
     width: 100%;
-   
+    
 }
 
 
@@ -373,7 +387,7 @@ figure h4
 .hosting h3
 {
     
-    font-weight: 750;
+    font-weight: 700;
     margin:2em;
     margin-top: 0em;
 }
@@ -404,7 +418,7 @@ transition-duration: 1s;
 .populaire
 {
 background-color: #F2F2F2;
-max-width: 550px;
+max-width: 400px;
 padding: 1em;
 padding-bottom: 2em;
 border-radius: 15px;
@@ -478,103 +492,7 @@ border-radius: 15px;
     padding-right: 1.5em;
 }
 
-/*section 2 activite*/
 
-/*
-.section2
-{
-    margin: 1em;
-    margin-top: 3em;
-}
-
-.section2 .activite h2
-{
-    font-size: 1em;
-    padding: 1em;
-    margin-top: 0px;
-}
-.section2 .activite figure
-
-{ 
-    width: 100%;
-    max-width: 445px;
-    margin: 0px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 4px #F2F2F2;  
-     
-}
-.section2 .activite p
-{
-    margin: 0px;
-}
-
-.section2 .activite figcaption
-{
-    height: 15%;
-}
-
-.section2 .activite img
-{
-   
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-}
-
-
-.section2 .activite
-{
-    display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-  
-  }
-
-
-  .one
-  {
-    
-    width: auto;
-   
-    grid-column: 1;
-    grid-row: 1 / span 2;
-  }
-  
-  .two
-  {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .three
-  {
-    
-    
-    grid-column: 2;
-    grid-row: 2;
-  }
-  
-  .four
-  {
-    
-    
-    grid-column: 3;
-    grid-row: 1 /  2;
-  }
-  
-  .five
-  {
-    grid-column: 4;
-    grid-row: 1;
-    
-  }
-  
-  
-  .six
-  
-  {
-    grid-column: 4;
-    grid-row: 2;
-  }
-*/
 /*section3 Activité*/
 
 
@@ -588,6 +506,7 @@ border-radius: 15px;
 {
     margin: 1em;
     padding-bottom: 2em;
+    max-width: 1600px;
    
 
 }
@@ -671,15 +590,15 @@ justify-content: space-between;
 {
 height: 450px;
 width: 300px;
-border-radius: 15px;
-box-shadow: 0px 5px 4px #F2F2F2;  
+border-radius: 15px;  
+box-shadow: #c9c6c6 3px 5px 8px ;
 }
 
 .small
 {
     width: 300px;
 border-radius: 15px;
-box-shadow: 0px 5px 4px #F2F2F2;  
+box-shadow: #c9c6c6 3px 5px 8px ; 
 }
 .big img
 {
@@ -727,7 +646,7 @@ footer
   width: 100%;
   padding-top: 2em;
    padding-bottom: 4em;
-   padding-left: 1em;
+ 
 }
 ul
 {
@@ -741,6 +660,7 @@ footer h2
   
     font-size: 1.1em;
     font-weight: 700;
+    padding-left: 1em;
    
 }
 
@@ -750,6 +670,7 @@ footer li
     padding-top: 0.6em;
     font-size: 1rem;
     font-weight: 500;
+    padding-left: 1em ;
 }
 
 footer li a:hover
@@ -793,7 +714,7 @@ footer li a:hover
 }
 .marqueur
   {   
-    padding: 20px;
+    padding: 16px;
     padding-right: 20px;
     padding-top: 18px;
     
@@ -810,64 +731,132 @@ footer li a:hover
     width: 100%;
 }
 
+/*Hotel pour  mobiles*/
 
+.hotel figure
 
-.section2 .activite figcaption
 {
-    height: 15%;
+    border: #FFFFFF 4px solid;
+    border-radius: 15px;
+    box-shadow: #c9c6c6 3px 5px 8px ;
+    padding: 0px;
+    margin: 18px;
+    
+    max-height: 200px;
+    max-width: 500px;
+    height: 100%;
+    width: 95%;
+   
 }
+
+.section1
+{
+    width: 95%;
+}
+
+.hotel 
+{
+    display: flex;
+    flex-direction: column;
+}
+.hotel img
+
+{
+    width: 100%;
+  max-height:115px ;
+  border-radius: 15px 15px 0px 0px;
+}
+.hotel ul 
+{
+   
+}
+
+
+/* Populaire pour  mobiles*/
+
 
 .populaire
 {
     border-radius: 0px;
+    width: 95%;
+    max-width: 500px;
 }
-.section2 .activite img
+
+/* Activite pour  mobiles*/
+
+.section3 
 {
-    height: auto;
-    width: 100%;
-    max-height: 130px;
-    border-radius: 15px 15px 0px 0px;
+    margin-left:20px;
+    
 }
 .section3 .activite
 {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    margin: 0px;
+    width: 100%;
 }
+
 .zone1, .zone2
 { display: flex;
     flex-direction: column;
 align-content: space-between;
+width: 100%;
+margin: 0px;
 }
+
 .high
 {
     width: 100%;
+    margin: 0px;
     
 }
 .section3 .activite img
 {
     height: auto;
     width: 100%;
+    max-width: 500px;
     max-height: 130px;
     border-radius: 15px 15px 0px 0px;
 }
-.section3 .activite
-{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .section3 .big
 {
     height: 190px;
-    margin-bottom: 1em;
+    margin: 0px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    
 }
 
+.section3 .big img 
+{
+    width: 100%;
+}
+
+.section3 .short_img
+{
+
+    width: 100%;
+}
 .section3 .small
 {
     height: 190px;
-    margin-bottom: 1em;
+    margin: 0px ;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+
 }
+
+.section3 a
+{
+ margin:0px;
+}
+
 
 footer
 {
@@ -886,7 +875,7 @@ footer h2
 
 
 /* règles CSS pour  tablette  */
-@media all and (min-width:991px) and (max-width: 1205px)
+@media all and (min-width:991px) and (max-width: 1260px)
 
 {
  
@@ -961,31 +950,67 @@ padding-top: 2em;
 .section1
 {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-between;
 }
-/*Hebergement*/
+/*Hebergement pour  tablette*/
 .hosting
 {
     background-color: #F2F2F2;
-    width: 70%;
+    width: 100%;
     border-radius: 15px;
+    
 }
 
-.hotel figure 
+.hotel 
 {
-    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+
+}
+.hotel li
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.hotel li a 
+{
+    width: 100%;
+}
+.hotel figure
+
+{
+    
+    max-height: 200px;
+    max-width: 400px;
+   background-color: #FFFFFF;
+    
+}
+
+.hotel img
+
+{
+    width: 100%;
+  max-height:115px ;
+  border-radius: 15px 15px 0px 0px;
 }
 
 
-/*populaire*/
+
+
+/*populaire pour  tablette*/
 
 .populaire figure
 {
     
    
-   width: 340px;
-   width: 100%;
+  
+   width: 90%;
 }
 
 
@@ -1005,9 +1030,28 @@ padding-top: 2em;
      
    
 }
+.populaire
+{
+    width: 97%;
+    margin-bottom: 15px;
+    max-width: 1200px;
+    
+}
+.populaire ul 
+{
+    display: flex;
+    width: 100%;
+    
+}
 
 
-/*activite tablette*/
+/*activite pour  tablette*/
+
+
+.section3
+{
+    max-width: 1200px;
+}
 .section3 .activite
 {
    display: flex;
@@ -1023,6 +1067,7 @@ padding-top: 2em;
     flex-direction: row;
     justify-content: space-between;
    align-content: space-between;
+   
     
 }
 .zone2
@@ -1041,23 +1086,21 @@ padding-top: 2em;
    align-content: space-between;
     
 }
-.big
-{
-    
-}
+
 
 .section3 .activite img 
 {
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 400px;
+    max-height: 190px;
 }
 
 .section3 .big
 {
     height: 190px;
+    max-width: 400px;
     margin-bottom: 2em;
     margin: 0px;
-    margin-right: 1em;
+    margin-right: 0em;
     padding-bottom: 2em;
 }
  
@@ -1065,13 +1108,19 @@ padding-top: 2em;
 .section3 .small
 {
     height: 190px;
+    max-width: 400px;
     margin-bottom: 2em;
     padding-bottom: 2em;
-    margin-right: 1em;
+    
 }
 
+.section3 a 
+{
+    margin:0% 3% ; 
+    width: 100%;
+}
 
-    /*footer tablette*/
+    /*footer pour  tablette*/
 
 footer .liste
 {
@@ -1086,7 +1135,7 @@ footer ul
 }
  
 /* règles CSS pour  destop  */
-@media all and (min-width:1200px) 
+@media all and (min-width:1260px) 
 
 {
 
@@ -1206,8 +1255,8 @@ footer ul
 
 {
   
-    max-height: 200px;
-    max-width: 250px;
+   height: 200px;
+    width: 250px;
     background-color: #FFFFFF;
    
    
@@ -1217,6 +1266,8 @@ footer ul
 {
     justify-content: space-around;
     max-height: 630px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .hosting
