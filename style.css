@@ -55,10 +55,15 @@ figure:hover
 
 /*Header*/
 
+header
+{
+    max-width: 1600px;
+}
 h1
 {
     font-size: 1.4em;
     font-weight: bolder;
+    padding-bottom: 15px;
 }
 
 .title
@@ -180,7 +185,7 @@ justify-content: space-between;
     color: black;
 }
 
-.ville ::placeholder
+.ville::placeholder
 {
     color:black;
 }
@@ -315,6 +320,7 @@ border:none
 {
     max-width: 1600px;
     margin-right: 0px;
+    margin-left: 15px;
 }
 .section1 h1
 {
@@ -337,7 +343,7 @@ border:none
 {
     border: #FFFFFF 4px solid;
     border-radius: 15px;
-    box-shadow: #c9c6c6 3px 5px 8px ;
+    box-shadow: #f0ebeb 3px 5px 8px ;
     padding: 0px;
     margin: 0em;
     margin-bottom: 3em;
@@ -419,7 +425,7 @@ transition-duration: 1s;
 {
 background-color: #F2F2F2;
 max-width: 400px;
-padding: 1em;
+padding-top: 1em;
 padding-bottom: 2em;
 border-radius: 15px;
 
@@ -432,18 +438,17 @@ border-radius: 15px;
     display: flex;
     justify-content: space-between;
 
-  
 }
 
 .populaire figure
 {
     display: flex;
- 
-    height: 140px;
+     height: 140px;
     border: #FFFFFF 5px solid;
     border-radius: 15px;
-    box-shadow: #e2dfdf 0px 5px 8px ;
+    box-shadow: #f0ebeb 0px 5px 8px ;
     margin: 0.4em;
+    width: 85%;
 }
 .populaire p
 {
@@ -493,29 +498,24 @@ border-radius: 15px;
 }
 
 
-/*section3 Activité*/
+/*section2 Activité*/
 
 
 
-
-
-
-
-
-.section3 
+.section2 
 {
     margin: 1em;
     padding-bottom: 2em;
-    max-width: 1600px;
+    max-width: 1520px;
    
 
 }
 
-.section3 h1
+.section2 h1
 {
     padding: 1em 0 ;
 }
-.section3 .activite
+.section2 .activite
 {
 display: flex;
 flex-wrap: wrap;
@@ -523,7 +523,7 @@ justify-content: space-between;
 
 
 }
-.section3 .activite h2
+.section2 .activite h2
 {
     font-size: 1em;
     margin: 0px;
@@ -546,6 +546,12 @@ justify-content: space-between;
     width: 48%;
 }
 
+.section2 .activite img 
+{
+    width: 100%;
+    height: 87%;
+    border-radius: 15px 15px 0px 0px;
+}
 
 .short_img
 {
@@ -557,48 +563,20 @@ justify-content: space-between;
     margin: 10px; 
     
 }
-.short_img a
-{ margin: 1%;}
-
-
-
-.short_img  figure
-{
-    height: 45%;
-  width: 100%;
-    margin: 25px;
-   
-    
-}
-
-
-.section3 .activite img 
-{
-    width: 100%;
-    height: 85%;
-    border-radius: 15px 15px 0px 0px;
-}
-.section3 .activite figcaption
-{
-    height: 15%;
-    margin: 0px;
-    padding: 0px;
-}
-
 
  .big
 {
 height: 450px;
 width: 300px;
 border-radius: 15px;  
-box-shadow: #c9c6c6 3px 5px 8px ;
+box-shadow: #f0ebeb 3px 5px 8px ;
 }
 
 .small
 {
     width: 300px;
 border-radius: 15px;
-box-shadow: #c9c6c6 3px 5px 8px ; 
+box-shadow: #f0ebeb 3px 5px 8px ; 
 }
 .big img
 {
@@ -684,15 +662,27 @@ footer li a:hover
 
 
 /* règles CSS pour  mobiles  */
-@media all and (max-width: 990px)
+@media all and (max-width: 1045px)
 {
 
- 
+ *
+ {
+    
+ }
 .destop 
 {
     display: none;
 }
 
+.top_line
+{
+   margin-top: 25px; 
+}
+
+.top_line p 
+{
+    margin-top: 15px;
+}
 .top_line li a:hover
 {
     color: #0065FC;
@@ -707,6 +697,10 @@ footer li a:hover
     
 }
 
+.title h1 
+{
+    margin-bottom: 15px;
+}
 
 .search_place .btn_destop
 {
@@ -731,33 +725,47 @@ footer li a:hover
     width: 100%;
 }
 
+.disponible
+{
+    margin-bottom: 15px;
+}
+
+
+.section1
+{
+    
+    margin: 0px;
+}
 /*Hotel pour  mobiles*/
 
+.hosting
+{
+    margin:0px;
+}
 .hotel figure
 
 {
     border: #FFFFFF 4px solid;
     border-radius: 15px;
-    box-shadow: #c9c6c6 3px 5px 8px ;
+    box-shadow: #f0ebeb 3px 5px 8px ;
     padding: 0px;
-    margin: 18px;
+    margin-left: 15px;
     
     max-height: 200px;
     max-width: 500px;
     height: 100%;
-    width: 95%;
+    width: 85%;
    
 }
 
-.section1
-{
-    width: 95%;
-}
+
 
 .hotel 
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin:0px;
 }
 .hotel img
 
@@ -766,10 +774,7 @@ footer li a:hover
   max-height:115px ;
   border-radius: 15px 15px 0px 0px;
 }
-.hotel ul 
-{
-   
-}
+
 
 
 /* Populaire pour  mobiles*/
@@ -778,41 +783,41 @@ footer li a:hover
 .populaire
 {
     border-radius: 0px;
-    width: 95%;
-    max-width: 500px;
+    max-width: 650px;
+    margin: 0px;
 }
 
 /* Activite pour  mobiles*/
 
-.section3 
+.section2 
 {
     margin-left:20px;
-    
+    margin-right: 0px;
 }
-.section3 .activite
+.section2 .activite
 {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     margin: 0px;
-    width: 100%;
+    width: 98%;
 }
 
 .zone1, .zone2
 { display: flex;
     flex-direction: column;
 align-content: space-between;
-width: 100%;
+width: 98%;
 margin: 0px;
 }
 
 .high
 {
-    width: 100%;
+    width: 98%;
     margin: 0px;
     
 }
-.section3 .activite img
+.section2 .activite img
 {
     height: auto;
     width: 100%;
@@ -822,42 +827,42 @@ margin: 0px;
 }
 
 
-.section3 .big
+.section2 .big
 {
     height: 190px;
     margin: 0px;
-    width: 100%;
+    width: 98%;
     max-width: 500px;
     margin-bottom: 20px;
     
 }
 
-.section3 .big img 
+.section2 .big img 
 {
     width: 100%;
 }
 
-.section3 .short_img
+.section2 .short_img
 {
 
     width: 100%;
 }
-.section3 .small
+.section2 .small
 {
     height: 190px;
     margin: 0px ;
-    width: 100%;
+    width: 98%;
     max-width: 500px;
     margin-bottom: 20px;
 
 }
 
-.section3 a
+.section2 a
 {
  margin:0px;
 }
 
-
+/* footer mobile*/
 footer
 {
     display: flex;
@@ -875,7 +880,7 @@ footer h2
 
 
 /* règles CSS pour  tablette  */
-@media all and (min-width:991px) and (max-width: 1260px)
+@media all and (min-width:1045px) and (max-width: 1320px)
 
 {
  
@@ -908,7 +913,11 @@ padding-top: 2em;
        border: 3px solid #FFFFFF;
    }
    
-  
+ .search_place
+ 
+ {
+     width: 95%;
+ }
 .search_place .btn .fas
 {
     display: none;
@@ -923,7 +932,7 @@ padding-top: 2em;
         border: #0065fc 50px;
         height: 100%;
     }    
-        .btn
+.btn
         {
         
             background-color: #0065FC;
@@ -957,7 +966,7 @@ padding-top: 2em;
 .hosting
 {
     background-color: #F2F2F2;
-    width: 100%;
+    width: 95%;
     border-radius: 15px;
     
 }
@@ -1005,11 +1014,15 @@ padding-top: 2em;
 
 /*populaire pour  tablette*/
 
-.populaire figure
+.populaire
 {
+    width: 95%;
+    margin-bottom: 15px;
+    max-width: 1300px;
     
-   
-  
+}
+.populaire figure
+{  
    width: 90%;
 }
 
@@ -1027,16 +1040,9 @@ padding-top: 2em;
     
     width: 60%;
     height: 100%;
-     
    
 }
-.populaire
-{
-    width: 97%;
-    margin-bottom: 15px;
-    max-width: 1200px;
-    
-}
+
 .populaire ul 
 {
     display: flex;
@@ -1048,17 +1054,17 @@ padding-top: 2em;
 /*activite pour  tablette*/
 
 
-.section3
+.section2
 {
-    max-width: 1200px;
+    max-width: 1300px;
+    margin:0px;
+    margin-left: 15px;
 }
-.section3 .activite
+.section2 .activite
 {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   align-content: space-between;
-   width: 100%;
+    width: 95%;
     
 }
 .zone1 
@@ -1066,7 +1072,8 @@ padding-top: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   align-content: space-between;
+  
+   
    
     
 }
@@ -1075,48 +1082,55 @@ padding-top: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   align-content: space-between;
+   
     
 }
 .activite .short_img
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-   align-content: space-between;
+  
     
 }
 
 
-.section3 .activite img 
+.section2 .activite img 
 {
     max-width: 400px;
+    
     max-height: 190px;
 }
 
-.section3 .big
+.section2 .big
 {
     height: 190px;
     max-width: 400px;
     margin-bottom: 2em;
     margin: 0px;
-    margin-right: 0em;
+    margin-right: 0px;
     padding-bottom: 2em;
+
 }
  
 
-.section3 .small
+.section2 .small
 {
     height: 190px;
     max-width: 400px;
     margin-bottom: 2em;
     padding-bottom: 2em;
+    width: 100%;
     
 }
-
-.section3 a 
+.section2 .small h2 
 {
-    margin:0% 3% ; 
+    width: 100%;
+}
+
+.section2 a 
+{
+    margin:0px;
+    margin-left: 5%; 
     width: 100%;
 }
 
@@ -1125,7 +1139,7 @@ padding-top: 2em;
 footer .liste
 {
 
-    width: 28%;
+    width: 25%;
   
 }
 footer ul 
@@ -1135,7 +1149,7 @@ footer ul
 }
  
 /* règles CSS pour  destop  */
-@media all and (min-width:1260px) 
+@media all and (min-width:1320px) 
 
 {
 
@@ -1167,12 +1181,24 @@ footer ul
        padding: 2em;
        border: 3px #FFFFFF solid;
    }
-   
+   header
+   {
+    margin-left: 3%;
+   }
+   .title
+   {
+    margin-left: 3%;
+   }
+
    .search_place .btn .fas
    {
        display: none;
    }
 
+   .search_place
+   {
+    margin-left: 3%;
+   }
 
    .search_place .btn_destop
    {
@@ -1208,8 +1234,14 @@ footer ul
     border-radius: 15px 0px 0px 15px;
             }
    
- 
-
+ .search_option 
+   {
+       margin-left: 3%;
+ }
+.disponible
+ {
+     margin-left: 3%;
+} 
 /*section 1 Destop*/
 
    .section1
@@ -1217,6 +1249,7 @@ footer ul
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    margin-left: 3%;
 }
 /*populaire destop*/
 .populaire
@@ -1279,6 +1312,11 @@ footer ul
     padding-left: 0.4em;
 }
 
+
+.section2 
+{
+    margin-left: 3%;
+}
 /*Activité Destop*/
 
 
@@ -1286,6 +1324,7 @@ footer ul
    footer .liste
 {
   width: 28%;
+  margin-left: 3%;
 }
 
 }
