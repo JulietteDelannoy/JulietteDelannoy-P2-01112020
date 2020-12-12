@@ -1,15 +1,4 @@
-/* font 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*/
-/*
-@font-face
-{
-    font-family: "Raleway", "sans serif";
-    src: url(reservia_files/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
-    src: url(reservia_files/Raleway-VariableFont_wght.ttf) format('truetype');
 
-}
-*/
 @import"https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap";
 
 body
@@ -103,6 +92,7 @@ h1
     display: flex;
     justify-content: space-between;
     padding: 0px;
+    max-width: 1700px ;
         
 }
 
@@ -278,7 +268,7 @@ justify-content: space-between;
 
 .filter:hover
 {
-    border: 3px solid #0065FC;
+    border: 2px solid #0065FC;
     cursor: pointer;
     background-color: #DEEBFF;
 
@@ -293,7 +283,7 @@ border:none
 
 .disponible
 {
-    margin: 1em;
+    
     margin-bottom: 3em;
     margin-top: 3em;
 }
@@ -322,7 +312,12 @@ border:none
     margin-right: 0px;
     margin-left: 15px;
 }
-.section1 h1
+
+.section1 .presentation
+{
+    display: none;
+}
+.section1 h2
 {
     margin: 1em;
 }
@@ -414,7 +409,6 @@ figure h4
 
 a figure :hover
 {
-
 font-weight: bold;
 transition-duration: 1s;
 
@@ -432,7 +426,7 @@ border-radius: 15px;
 
 }
 
-.populaire h1
+.populaire h2
 
 {
     display: flex;
@@ -662,13 +656,10 @@ footer li a:hover
 
 
 /* règles CSS pour  mobiles  */
-@media all and (max-width: 1045px)
+@media all and (max-width: 1044px)
 {
 
- *
- {
-    
- }
+ 
 .destop 
 {
     display: none;
@@ -740,7 +731,7 @@ footer li a:hover
 
 .hosting
 {
-    margin:0px;
+    margin: 0px;
 }
 .hotel figure
 
@@ -750,7 +741,6 @@ footer li a:hover
     box-shadow: #f0ebeb 3px 5px 8px ;
     padding: 0px;
     margin-left: 15px;
-    
     max-height: 200px;
     max-width: 500px;
     height: 100%;
@@ -771,7 +761,7 @@ footer li a:hover
 
 {
     width: 100%;
-  max-height:115px ;
+  max-height: 115px;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -783,16 +773,21 @@ footer li a:hover
 .populaire
 {
     border-radius: 0px;
-    max-width: 650px;
+    max-width: 680px;
     margin: 0px;
 }
-
+.populaire ul 
+{
+   width: 88%; 
+   padding: 15px;
+}
 /* Activite pour  mobiles*/
 
 .section2 
 {
     margin-left:20px;
     margin-right: 0px;
+    width: 90%;
 }
 .section2 .activite
 {
@@ -867,6 +862,9 @@ footer
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 25px 0px;
 }
 footer ul 
 {
@@ -875,6 +873,9 @@ footer ul
 footer h2
 {
     margin-bottom: 10px;
+}
+footer .liste
+{ width: 80%;
 }
 }
 
@@ -1149,7 +1150,7 @@ footer ul
 }
  
 /* règles CSS pour  destop  */
-@media all and (min-width:1320px) 
+@media all and (min-width:1321px) 
 
 {
 
@@ -1256,13 +1257,28 @@ footer ul
 {
     border-radius: 15px;
     width: 30%;
+    
+
+   
 }
+
+.populaire ul 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin:0px;
+}
+
 
 .populaire figure
 {
 
    width: 340px;
    height: 140px;
+  margin: 4% ;
+   
 }
 
 .populaire img 
@@ -1313,12 +1329,12 @@ footer ul
 }
 
 
+
+/*Activité Destop*/
 .section2 
 {
-    margin-left: 3%;
+    margin: 3%;
 }
-/*Activité Destop*/
-
 
 
    footer .liste
